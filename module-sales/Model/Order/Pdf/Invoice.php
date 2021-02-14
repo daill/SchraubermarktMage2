@@ -141,6 +141,12 @@ class Invoice extends AbstractPdf
             /* Add address */
             $this->insertAddress($page, $invoice->getStore());
             /* Add head */
+            $page->drawText(
+                        trim(strip_tags("Einfach mal ein Text")),
+                        $this->getAlignRight($_value, 130, 440, $font, 10),
+                        $this->y,
+                        'UTF-8'
+                    );
             $this->insertOrder(
                 $page,
                 $order,
