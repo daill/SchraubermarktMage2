@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Schraubermarkt\modules-sales\Model\Order\Pdf;
+namespace Schraubermarkt\Sales\Model\Order\Pdf;
 
 use Magento\Sales\Model\ResourceModel\Order\Invoice\Collection;
 
