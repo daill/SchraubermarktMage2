@@ -1,5 +1,5 @@
  {
-    "name": "schraubermarkt/modules-sales",
+    "name": "schraubermarkt/sales",
     "description": "Specific",
     "type": "magento2-module",
     "version": "1.0.0",
@@ -13,7 +13,7 @@
     "autoload": {
       "files": [ "registration.php" ],
       "psr-4": {
-        "Schraubermarkt\\modules-sales\\": ""
+        "Schraubermarkt\\Sales\\": ""
       }
     }
   }
