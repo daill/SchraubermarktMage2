@@ -13,7 +13,7 @@ use Magento\Sales\Model\Order\Pdf\Config;
  * Sales Order Invoice PDF model
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
-class Invoice extends \Magento\Sales\Model\Order\Pdf\AbstractPdf
+class Invoice extends \Magento\Sales\Model\Order\Pdf\Invoice
 {
     /**
      * @var \Magento\Store\Model\StoreManagerInterface
