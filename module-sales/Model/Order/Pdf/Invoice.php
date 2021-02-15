@@ -11,7 +11,7 @@ use Magento\Sales\Model\ResourceModel\Order\Invoice\Collection;
  * Sales Order Invoice PDF model
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
-class Invoice extends AbstractPdf
+class Invoice extends \Magento\Sales\Model\Order\Pdf\Invoice
 {
     /**
      * @var \Magento\Store\Model\StoreManagerInterface
