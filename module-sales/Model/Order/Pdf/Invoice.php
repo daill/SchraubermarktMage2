@@ -13,7 +13,7 @@ use Magento\Sales\Model\Order\Pdf\Config;
  * Sales Order Invoice PDF model
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
-class Invoice extends \Magento\Sales\Model\Order\Pdf\Invoice
+class Invoice extends \Magento\Sales\Model\Order\Pdf\AbstractPdf
 {
     /**
      * @var \Magento\Store\Model\StoreManagerInterface
@@ -143,12 +143,6 @@ class Invoice extends \Magento\Sales\Model\Order\Pdf\Invoice
             /* Add address */
             $this->insertAddress($page, $invoice->getStore());
             /* Add head */
-            $page->drawText(
-                        trim(strip_tags("Einfach mal ein Text")),
-                        $this->getAlignRight($_value, 130, 440, $font, 10),
-                        $this->y,
-                        'UTF-8'
-                    );
             $this->insertOrder(
                 $page,
                 $order,
