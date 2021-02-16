@@ -7,13 +7,12 @@ namespace Schraubermarkt\Sales\Model\Order\Pdf;
 
 use Magento\Sales\Model\ResourceModel\Order\Invoice\Collection;
 use Magento\Sales\Model\Order\Pdf\Config;
-use Magento\Sales\Model\Order\Pdf\Invoice as CoreInvoice;
 
 /**
  * Sales Order Invoice PDF model
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
-class Invoice extends \Magento\Sales\Model\Order\Pdf\Invoice
+class CustomInvoice extends \Magento\Sales\Model\Order\Pdf\Invoice
 {
        /**
      * Set font as regular
