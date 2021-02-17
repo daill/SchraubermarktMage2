@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace \Schraubermarkt\Sales\Model\Order\Pdf;
+namespace Schraubermarkt\Sales\Model\Order\Pdf;
 
 use Magento\Sales\Model\ResourceModel\Order\Invoice\Collection;
 use Magento\Sales\Model\Order\Pdf\Config;
@@ -12,7 +12,7 @@ use Magento\Sales\Model\Order\Pdf\Config;
  * Sales Order Invoice PDF model
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
-class CustomInvoice extends \Magento\Sales\Model\Order\Pdf\Invoice
+class CustomInvoice extends Magento\Sales\Model\Order\Pdf\Invoice
 {
        /**
      * Set font as regular
