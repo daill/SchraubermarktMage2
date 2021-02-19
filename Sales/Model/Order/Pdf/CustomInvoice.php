@@ -6,6 +6,8 @@
 namespace Schraubermarkt\Sales\Model\Order\Pdf;
 
 use \Magento\Sales\Model\Order\Pdf\Invoice;
+use Magento\Sales\Model\Order\Pdf\Config;
+
 
 /**
  * Sales Order Invoice PDF model
@@ -14,10 +16,15 @@ use \Magento\Sales\Model\Order\Pdf\Invoice;
 class CustomInvoice extends Invoice
 {
 
-    /**
-     * @var \Magento\Store\Model\App\Emulation
+/**
+     * @var \Magento\Store\Model\StoreManagerInterface
      */
-    private $appEmulation;
+    protected $_storeManager;
+
+    /**
+     * @var \Magento\Framework\Locale\ResolverInterface
+     */
+    protected $_localeResolver;
 
     /**
      * @param \Magento\Payment\Helper\Data $paymentData
@@ -31,7 +38,7 @@ class CustomInvoice extends Invoice
      * @param \Magento\Framework\Translate\Inline\StateInterface $inlineTranslation
      * @param \Magento\Sales\Model\Order\Address\Renderer $addressRenderer
      * @param \Magento\Store\Model\StoreManagerInterface $storeManager
-     * @param \Magento\Store\Model\App\Emulation $appEmulation
+     * @param \Magento\Framework\Locale\ResolverInterface $localeResolver
      * @param array $data
      *
      * @SuppressWarnings(PHPMD.ExcessiveParameterList)
@@ -41,30 +48,34 @@ class CustomInvoice extends Invoice
         \Magento\Framework\Stdlib\StringUtils $string,
         \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
         \Magento\Framework\Filesystem $filesystem,
-        \Magento\Sales\Model\Order\Pdf\Config $pdfConfig,
+        Config $pdfConfig,
         \Magento\Sales\Model\Order\Pdf\Total\Factory $pdfTotalFactory,
         \Magento\Sales\Model\Order\Pdf\ItemsFactory $pdfItemsFactory,
         \Magento\Framework\Stdlib\DateTime\TimezoneInterface $localeDate,
         \Magento\Framework\Translate\Inline\StateInterface $inlineTranslation,
         \Magento\Sales\Model\Order\Address\Renderer $addressRenderer,
         \Magento\Store\Model\StoreManagerInterface $storeManager,
-        \Magento\Store\Model\App\Emulation $appEmulation,
+        \Magento\Framework\Locale\ResolverInterface $localeResolver,
         array $data = []
-    ) {
-        $this->_storeManager = $storeManager;
-        $this->appEmulation = $appEmulation;
+    )
+    {
         parent::__construct(
-            $context,
-            $registry,
-            $taxData,
-            $filesystem,
-            $filterManager,
+            $paymentData,
             $string,
-            $resource,
-            $resourceCollection,
+            $scopeConfig,
+            $filesystem,
+            $pdfConfig,
+            $pdfTotalFactory,
+            $pdfItemsFactory,
+            $localeDate,
+            $inlineTranslation,
+            $addressRenderer,
+            $storeManager,
+            $localeResolver,
             $data
         );
     }
+
 
         /**
      * Return PDF document
