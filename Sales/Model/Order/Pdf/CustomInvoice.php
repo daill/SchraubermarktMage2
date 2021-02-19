@@ -54,17 +54,14 @@ class CustomInvoice extends Invoice
         $this->_storeManager = $storeManager;
         $this->appEmulation = $appEmulation;
         parent::__construct(
-            $paymentData,
-            $string,
-            $scopeConfig,
+            $context,
+            $registry,
+            $taxData,
             $filesystem,
-            $pdfConfig,
-            $pdfTotalFactory,
-            $pdfItemsFactory,
-            $localeDate,
-            $inlineTranslation,
-            $addressRenderer,
-            $storeManager,
+            $filterManager,
+            $string,
+            $resource,
+            $resourceCollection,
             $data
         );
     }
