@@ -6,7 +6,6 @@
 namespace Schraubermarkt\Sales\Model\Order\Pdf;
 
 use \Magento\Sales\Model\Order\Pdf\Invoice;
-use \Magento\Sales\Model\Order\Pdf\Config;
 
 /**
  * Sales Order Invoice PDF model
@@ -42,7 +41,7 @@ class CustomInvoice extends Invoice
         \Magento\Framework\Stdlib\StringUtils $string,
         \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
         \Magento\Framework\Filesystem $filesystem,
-        Config $pdfConfig,
+        \Magento\Sales\Model\Order\Pdf\Config $pdfConfig,
         \Magento\Sales\Model\Order\Pdf\Total\Factory $pdfTotalFactory,
         \Magento\Sales\Model\Order\Pdf\ItemsFactory $pdfItemsFactory,
         \Magento\Framework\Stdlib\DateTime\TimezoneInterface $localeDate,
@@ -65,6 +64,8 @@ class CustomInvoice extends Invoice
             $localeDate,
             $inlineTranslation,
             $addressRenderer,
+            $storeManager,
+            $localeResolver,
             $data
         );
     }
