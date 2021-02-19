@@ -6,6 +6,7 @@
 namespace Schraubermarkt\Sales\Model\Order\Pdf;
 
 use \Magento\Sales\Model\Order\Pdf\Invoice;
+use \Magento\Sales\Model\Order\Pdf\Config;
 
 /**
  * Sales Order Invoice PDF model
