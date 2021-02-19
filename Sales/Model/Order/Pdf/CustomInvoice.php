@@ -69,6 +69,7 @@ class CustomInvoice extends Invoice
             $inlineTranslation,
             $addressRenderer,
             $storeManager,
+            $appEmulation,
             $data
         );
         $this->appEmulation = $appEmulation;
