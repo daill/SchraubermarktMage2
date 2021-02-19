@@ -21,10 +21,7 @@ class CustomInvoice extends Invoice
      */
     protected $_storeManager;
 
-    /**
-     * @var \Magento\Framework\Locale\ResolverInterface
-     */
-    protected $_localeResolver;
+    private $appEmulation;
 
     /**
      * @param \Magento\Payment\Helper\Data $paymentData
@@ -55,9 +52,10 @@ class CustomInvoice extends Invoice
         \Magento\Framework\Translate\Inline\StateInterface $inlineTranslation,
         \Magento\Sales\Model\Order\Address\Renderer $addressRenderer,
         \Magento\Store\Model\StoreManagerInterface $storeManager,
-        \Magento\Framework\Locale\ResolverInterface $localeResolver,
+        \Magento\Store\Model\App\Emulation $appEmulation,
         array $data = []
     )
+    $this->appEmulation = $appEmulation;
     {
         parent::__construct(
             $paymentData,
@@ -71,7 +69,6 @@ class CustomInvoice extends Invoice
             $inlineTranslation,
             $addressRenderer,
             $storeManager,
-            $localeResolver,
             $data
         );
     }
