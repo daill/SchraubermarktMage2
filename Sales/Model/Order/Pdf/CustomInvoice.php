@@ -55,8 +55,8 @@ class CustomInvoice extends Invoice
         \Magento\Store\Model\App\Emulation $appEmulation,
         array $data = []
     )
-    $this->appEmulation = $appEmulation;
     {
+
         parent::__construct(
             $paymentData,
             $string,
@@ -71,6 +71,8 @@ class CustomInvoice extends Invoice
             $storeManager,
             $data
         );
+        $this->appEmulation = $appEmulation;
+
     }
 
 
