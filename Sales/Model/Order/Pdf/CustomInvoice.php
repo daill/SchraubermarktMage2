@@ -65,7 +65,6 @@ class CustomInvoice extends Invoice
             $inlineTranslation,
             $addressRenderer,
             $storeManager,
-            $localeResolver,
             $data
         );
     }
