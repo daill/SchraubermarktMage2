@@ -197,6 +197,6 @@ class CustomInvoice extends Invoice
     public function insertTaxSentence(\Zend_Pdf_Page $page)
     {
         $this->_setFontRegular($page, 10);
-        $page->drawText(__('Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird Umsatzsteuer nicht berechnet.'), 40, $this->y+50, 'UTF-8');
+        $page->drawText(__('Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird Umsatzsteuer nicht berechnet.'), 40, $this->y+53, 'UTF-8');
     }
 }
