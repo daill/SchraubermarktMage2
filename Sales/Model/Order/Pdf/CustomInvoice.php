@@ -122,12 +122,13 @@ class CustomInvoice extends Invoice
             $this->insertDocumentNumber($page, __('Invoice # ') . $invoice->getIncrementId());
             /* Add table */
 
-            $this->insertTaxSentence($page);
 
 
             $this->_drawHeader($page);
             /* Add body */
 
+
+            $this->insertTaxSentence($page);
 
             foreach ($invoice->getAllItems() as $item) {
                 if ($item->getOrderItem()->getParentItem()) {
