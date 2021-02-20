@@ -163,8 +163,8 @@ class CustomInvoice extends Invoice
         $page->setFillColor(new \Zend_Pdf_Color_Rgb(0.93, 0.92, 0.92));
         $page->setLineColor(new \Zend_Pdf_Color_GrayScale(0.5));
         $page->setLineWidth(0.5);
-        $page->drawRectangle(25, $this->y, 570, $this->y - 15);
-        $this->y -= 10;
+        $page->drawRectangle(25, $this->y-10, 570, $this->y - 25);
+        $this->y -= 20;
         $page->setFillColor(new \Zend_Pdf_Color_Rgb(0, 0, 0));
 
         //columns headers
@@ -184,7 +184,7 @@ class CustomInvoice extends Invoice
 
         $this->drawLineBlocks($page, [$lineBlock], ['table_header' => true]);
         $page->setFillColor(new \Zend_Pdf_Color_GrayScale(0));
-        $this->y -= 5;
+        $this->y -= 30;
     }
 
         /**
