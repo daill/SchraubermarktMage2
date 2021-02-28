@@ -9,30 +9,22 @@ use Magento\Sales\Model\ConfigInterface;
 class Totals extends \Magento\Checkout\Block\Cart\Totals
 {
     /**
-     * Get totals html.
+     * Render totals html for specific totals area (footer, body)
      *
-     * @param mixed $total
-     * @param int|null $area
-     * @param int $colspan
-     * @return string
+     * @param   null|string $area
+     * @param   int $colspan
+     * @return  string
      */
-    public function renderTotal($total, $area = null, $colspan = 1)
+    public function renderTotals($area = null, $colspan = 1)
     {
-        $code = $total->getCode();
-        if ($total->getAs()) {
-            $code = $total->getAs();
+        $html = '';
+        foreach ($this->getTotals() as $total) {
+            if ($total->getArea() != $area && $area != -1) {
+                continue;
+            }
+            $html .= $this->renderTotal($total, $area, $colspan);
         }
-        $orig_html = $this->_getTotalRenderer(
-            $code
-        )->setTotal(
-            $total
-        )->setColspan(
-            $colspan
-        )->setRenderingArea(
-            $area === null ? -1 : $area
-        )->toHtml();
-
-        return $orig_html . "<div>some text</div>";
+        return $html;
     }
 
 }
