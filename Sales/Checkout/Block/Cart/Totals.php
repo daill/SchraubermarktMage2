@@ -32,7 +32,7 @@ class Totals extends \Magento\Checkout\Block\Cart\Totals
             $area === null ? -1 : $area
         )->toHtml();
 
-        return $orig_html . "<div>some text</div>"
+        return $orig_html . "<div>some text</div>";
     }
 
 }
