@@ -1,5 +1,5 @@
 <?php
-namespace PME\Hideprice\Pricing\Render;
+namespace Schraubermarkt\Sales\Pricing\Render;
 
 use Magento\Catalog\Pricing\Price;
 use Magento\Framework\Pricing\Render;
