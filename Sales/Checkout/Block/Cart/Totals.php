@@ -24,6 +24,7 @@ class Totals extends \Magento\Checkout\Block\Cart\Totals
             }
             $html .= $this->renderTotal($total, $area, $colspan);
         }
+        $html .= "<span>Some Text</span>"
         return $html;
     }
 
