@@ -16,14 +16,11 @@ class FinalPriceBox extends \Magento\Catalog\Pricing\Render\FinalPriceBox
      $httpContext=$objectManager->get('Magento\Framework\App\Http\Context');
      $isLoggedIn = $httpContext->getValue(\Magento\Customer\Model\Context::CONTEXT_AUTH);
 
-     if($isLoggedIn){
        $result = '<div class="price-box ' . $this->getData('css_classes') . '" ' .
         'data-role="priceBox" ' .
         'data-product-id="' . $this->getSaleableItem()->getId() . '"' .
-        '>' . $html . '</div>';
-     }else{
-        $result = "<p>For any Quaries <a href='http://127.0.0.1/magento/contact/'>Contact Us </a></p>";
-     }
+        '>' . $html . '</div>
+        <span>Endpreis zzgl. Versandkosten, keine Ausweisung der Mehrwertsteuer gemäß § 19 UStG</span>';
     return $result;
     }
 
