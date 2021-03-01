@@ -3,5 +3,4 @@
     <preference for="Magento\Sales\Model\Order\Pdf\Invoice" type="Schraubermarkt\Sales\Model\Order\Pdf\CustomInvoice" />
     <preference for="Magento\Catalog\Pricing\Render\FinalPriceBox" type="Schraubermarkt\Sales\Pricing\Render\FinalPriceBox" />
     <preference for="Magento\ConfigurableProduct\Pricing\Render\FinalPriceBox" type="Schraubermarkt\Sales\Pricing\Render\FinalPriceBox" />
-    <preference for="Magento\Checkout\Block\Cart\Totals" type="Schraubermarkt\Sales\Checkout\Block\Cart\Totals" />
 </config>
