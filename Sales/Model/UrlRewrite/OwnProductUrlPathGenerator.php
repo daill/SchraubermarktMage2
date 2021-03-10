@@ -17,7 +17,7 @@ use Magento\Store\Model\StoreManagerInterface;
 /**
  * Model product url path generator
  */
-class OwnProductUrlPathGenerator extends /Magento/CatalogUrlRewrite/Model/ProductUrlPathGenerator {
+class OwnProductUrlPathGenerator extends \Magento\CatalogUrlRewrite\Model\ProductUrlPathGenerator {
     /**
      * Prepare url key for product
      *
