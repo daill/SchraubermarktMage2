@@ -5,7 +5,7 @@
             <block class="Magento\Framework\View\Element\Template" name="checkout.cart.checkout.details" before="checkout.cart.coupon" template="Schraubermarkt_Sales::checkout-details.phtml" />
         </referenceContainer-->
         <referenceContainer name="checkout.root">
-            <block class="Magento\Framework\View\Element\Template" name="minicart.addons.checkout.details" before="estimation" template="Schraubermarkt_Sales::checkout-details.phtml" />
+            
         </referenceContainer>
     </body>
 </page>
