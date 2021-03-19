@@ -6,5 +6,8 @@
                 <argument name="template" xsi:type="string">Schraubermarkt_Sales::cart/shipping.phtml</argument>
             </action>
         </referenceBlock>
+        <referenceBlock name="checkout.cart.totals.container">
+            <block after="checkout.cart.totals" class="Schraubermarkt\Sales\Checkout\Cart\CheckoutDetails" name="custom.shipping" as="custom_shipping" template="Schraubermarkt_Sales::checkout-details.phtml"/>
+        </referenceBlock>
     </body>
 </page>
