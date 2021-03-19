@@ -9,8 +9,10 @@ var config = {
         },
     map: {
         '*': {
-            'Amazon_Payment/template/checkout-button.html': 
-              'Schraubermarkt_Sales/template/checkout-button.html'
+            'Amazon_Payment/template/checkout-button.html': 'Schraubermarkt_Sales/template/checkout-button.html'
+        }, 
+        '*': {
+            'Magento_Checkout/template/cart/shipping-estimation.html': 'Schraubermarkt_Sales/template/cart/shipping-estimation.html'
         }
     }
 }
