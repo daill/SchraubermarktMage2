@@ -10,6 +10,6 @@ class CheckoutDetails extends \Magento\Framework\View\Element\Template
     }
 
     public function getText(){
-        return '<span>Endpreis <a href="/versandkosten">zzgl. Versandkosten</a>, keine Ausweisung der Mehrwertsteuer gemäß § 19 UStG</span>';
+        return '<div id="checkout-details"><span>Endpreis <a href="/versandkosten">zzgl. Versandkosten</a>, keine Ausweisung der Mehrwertsteuer gemäß § 19 UStG</span></div>';
     }
 }
