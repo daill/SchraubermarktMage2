@@ -6,7 +6,7 @@ define([
 
     return Component.extend({
         defaults: {
-            template: 'QaisarSatti_HelloWorld/checkout/shipping/additional-block'
+            template: 'Schraubermarkt_Sales/checkout-details'
         }
     });
 });
