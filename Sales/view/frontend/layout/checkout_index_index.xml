@@ -40,11 +40,11 @@
                                                                     <item name="title" xsi:type="string" translate="true">Order Total</item>
                                                                 </item>
                                                             </item>
-                                                            <item name="details" xsi:type="array">
-                                                                <item name="component" xsi:type="string">Schraubermarkt_Sales/js/view/checkout-details</item>
-                                                            </item>
                                                         </item>
                                                     </item>
+                                                    <item name="details" xsi:type="array">
+                                                                <item name="component" xsi:type="string">Schraubermarkt_Sales/js/view/checkout-details</item>
+                                                            </item>
                                                     <item name="itemsBefore" xsi:type="array">
                                                         <item name="component" xsi:type="string">uiComponent</item>
                                                         <item name="children" xsi:type="array">
