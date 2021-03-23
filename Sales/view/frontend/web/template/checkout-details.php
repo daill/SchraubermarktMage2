@@ -1,0 +1,1 @@
+<div class="delivery_cost"><span>Endpreis <a href="/versandkosten">zzgl. Versandkosten</a>, keine Ausweisung der Mehrwertsteuer gemäß § 19 UStG</span></div>
