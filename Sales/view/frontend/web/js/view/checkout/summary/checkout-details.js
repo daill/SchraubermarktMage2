@@ -7,7 +7,7 @@
 define(
     [
     ],
-    function (Component, quote, totals) {
+    function (Component) {
         "use strict";
         return Component.extend({
             defaults: {
