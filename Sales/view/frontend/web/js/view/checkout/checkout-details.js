@@ -2,13 +2,13 @@
 /*global alert*/
 define(
     [
-        'Magento_Checkout/js/view/summary/abstract-total',
+        'uiComponent',
     ],
     function (Component) {
         "use strict";
         return Component.extend({
             defaults: {
-                template: 'Schraubermarkt_Sales/checkout/summary/checkout-details'
+                template: 'Schraubermarkt_Sales/checkout/checkout-details'
             },
         });
     }
