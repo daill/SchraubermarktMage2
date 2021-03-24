@@ -3,8 +3,9 @@
 define(
     [
         'uiComponent',
+        'ko',
     ],
-    function (Component) {
+    function (Component, ko) {
         "use strict";
         return Component.extend({
             defaults: {
