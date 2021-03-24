@@ -42,8 +42,14 @@
                                                             </item>
                                                         </item>
                                                     </item>
+                                                    
                                                     <item name="itemsBefore" xsi:type="array">
-                                                        <item name="component" xsi:type="string">Schraubermarkt_Sales/js/view/checkout-details</item>
+                                                        <item name="component" xsi:type="string">uiComponent</item>
+                                                        <item name="children" xsi:type="array">
+                                                            <item name="details_sidebar" xsi:type="array">
+                                                                <item name="component" xsi:type="string">Schraubermarkt_Sales/js/view/checkout-details</item>
+                                                            </item>
+                                                        </item>
                                                     </item>
                                                     <item name="cart_items" xsi:type="array">
                                                         <item name="component" xsi:type="string">Magento_Checkout/js/view/summary/cart-items</item>
