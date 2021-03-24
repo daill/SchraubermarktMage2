@@ -6,6 +6,7 @@
 /*global alert*/
 define(
     [
+        'Magento_Checkout/js/view/summary/abstract-total',
     ],
     function (Component) {
         "use strict";
