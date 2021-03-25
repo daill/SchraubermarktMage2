@@ -3,22 +3,4 @@
   <head>
   	<css src="Schraubermarkt_Sales::css/local.css"/>
   </head>
-  <referenceBlock name="minicart">
-  	<arguments>
-        <argument name="jsLayout" xsi:type="array">
-            <item name="components" xsi:type="array">
-                <item name="minicart_content" xsi:type="array">
-                	<item name="children" xsi:type="array">
-                		<item name="details" xsi:type="array">
-                            <item name="component"  xsi:type="string">Schraubermarkt_Sales/js/view/checkout/checkout-details</item>
-                            <item name="config" xsi:type="array">
-                                 <item name="template" xsi:type="string">Schraubermarkt_Sales/checkout/checkout-details</item>
-                            </item>
-                        </item>
-                	</item>
-                </item>
-            </item>
-        </argument>
-    </arguments>
-  </referenceContainer>
 </page>
