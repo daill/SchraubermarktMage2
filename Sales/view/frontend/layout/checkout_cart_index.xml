@@ -7,7 +7,7 @@
             </action>
         </referenceBlock>
         <referenceBlock name="checkout.cart.totals.container">
-            <block after="checkout.cart.totals" class="Schraubermarkt\Sales\Checkout\Cart\CheckoutDetails" name="custom.shipping" as="custom_shipping" template="Schraubermarkt_Sales::checkout-details.phtml"/>
+            <block after="checkout.cart.methods.bottom" class="Schraubermarkt\Sales\Checkout\Cart\CheckoutDetails" name="custom.shipping" as="custom_shipping" template="Schraubermarkt_Sales::checkout-details.phtml"/>
         </referenceBlock>
     </body>
 </page>
