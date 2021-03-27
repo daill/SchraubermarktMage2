@@ -12,7 +12,7 @@
         <referenceBlock name="product.info.details">
             <block class="LizardMedia\ProductAttachment\Block\Product\AttachmentTab" name="attachments.tab" template="LizardMedia_ProductAttachment::product/view/attachment-tab.phtml" group="detailed_info" after="product.info.extrahint">
                 <arguments>
-                    <argument name="sort_order" xsi:type="string">10</argument>
+                    <argument name="sort_order" xsi:type="string">30</argument>
                 </arguments>
                 <action method="setTitle">
                     <argument translate="true" name="title" xsi:type="string">Anhänge</argument>
