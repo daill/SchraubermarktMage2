@@ -10,8 +10,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="product.info.details">
-            <block class="LizardMedia\ProductAttachment\Block\Product\AttachmentTab" name="attachments.tab"
-                   template="LizardMedia_ProductAttachment::product/view/attachment-tab.phtml" group="detailed_info" after="product.info.description">
+            <block class="LizardMedia\ProductAttachment\Block\Product\AttachmentTab" name="attachments.tab" template="LizardMedia_ProductAttachment::product/view/attachment-tab.phtml" group="detailed_info" after="product.info.extrahint">
                 <action method="setTitle">
                     <argument translate="true" name="title" xsi:type="string">Anhänge</argument>
                 </action>
