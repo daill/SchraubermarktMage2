@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Magento\Reports\Block\Adminhtml\Sales\Sales;
+namespace Schraubermarkt\Sales\Block\Adminhtml\Sales\Sales;
 
 use Magento\Framework\DataObject;
 use Magento\Reports\Block\Adminhtml\Grid\Column\Renderer\Currency;
