@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Schraubermarkt\Sales\Block\Adminhtml\Sales\Sales;
+namespace Magento\Reports\Block\Adminhtml\Sales\Sales;
 
 use Magento\Framework\DataObject;
 use Magento\Reports\Block\Adminhtml\Grid\Column\Renderer\Currency;
@@ -17,7 +17,7 @@ use Magento\Sales\Model\Order;
  *
  * @SuppressWarnings(PHPMD.DepthOfInheritance)
  */
-class CustomSalesGrid extends \Magento\Reports\Block\Adminhtml\Grid\AbstractGrid
+class Grid extends \Magento\Reports\Block\Adminhtml\Grid\AbstractGrid
 {
     /**
      * @var string
