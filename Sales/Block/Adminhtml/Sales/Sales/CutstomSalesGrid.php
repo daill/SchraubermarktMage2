@@ -17,7 +17,7 @@ use Magento\Sales\Model\Order;
  *
  * @SuppressWarnings(PHPMD.DepthOfInheritance)
  */
-class CustomSalesGrid extends \Magento\Reports\Block\Adminhtml\Sales\Sales\Grid
+class CustomSalesGrid extends \Magento\Reports\Block\Adminhtml\Grid\AbstractGrid
 {
     /**
      * @var string
