@@ -113,7 +113,7 @@ class Createdat extends \Magento\Sales\Model\ResourceModel\Report\AbstractReport
                 ),
                 'total_cost_amount' => new \Zend_Db_Expr(
                     sprintf(
-                        'SUM((%s - %s - %s - %s - %s - %s) * %s)',
+                        'SUM(- %s - ((%s - %s - %s - %s - %s) * %s)',
                         $connection->getIfNullSql('oi.total_custom_cost', 0),
                         $connection->getIfNullSql('o.base_total_paid', 0),
                         $connection->getIfNullSql('o.base_total_refunded', 0),
