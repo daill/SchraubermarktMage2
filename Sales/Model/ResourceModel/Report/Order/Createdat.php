@@ -101,16 +101,27 @@ class Createdat extends \Magento\Sales\Model\ResourceModel\Report\AbstractReport
                     )
                 ),
                 'total_profit_amount' => new \Zend_Db_Expr(
-                    sprintf('SUM((%s)', $connection->getIfNullSql('oi.total_custom_cost', 0),)
-                    //sprintf(
-                    //    'SUM((%s - %s - %s - %s - %s) * %s)',
-                    //    $connection->getIfNullSql('o.base_total_paid', 0),
-                    //    $connection->getIfNullSql('o.base_total_refunded', 0),
-                    //    $connection->getIfNullSql('o.base_tax_invoiced', 0),
-                    //    $connection->getIfNullSql('o.base_shipping_invoiced', 0),
-                    //    $connection->getIfNullSql('o.base_total_invoiced_cost', 0),
-                    //    $connection->getIfNullSql('o.base_to_global_rate', 0)
-                    //)
+                    sprintf(
+                        'SUM((%s - %s - %s - %s - %s) * %s)',
+                        $connection->getIfNullSql('o.base_total_paid', 0),
+                        $connection->getIfNullSql('o.base_total_refunded', 0),
+                        $connection->getIfNullSql('o.base_tax_invoiced', 0),
+                        $connection->getIfNullSql('o.base_shipping_invoiced', 0),
+                        $connection->getIfNullSql('o.base_total_invoiced_cost', 0),
+                        $connection->getIfNullSql('o.base_to_global_rate', 0)
+                    )
+                ),
+                'total_cost_amount' => new \Zend_Db_Expr(
+                    sprintf(
+                        'SUM((%s - %s - %s - %s - %s - %s) * %s)',
+                        $connection->getIfNullSql('oi.total_custom_cost', 0),
+                        $connection->getIfNullSql('o.base_total_paid', 0),
+                        $connection->getIfNullSql('o.base_total_refunded', 0),
+                        $connection->getIfNullSql('o.base_tax_invoiced', 0),
+                        $connection->getIfNullSql('o.base_shipping_invoiced', 0),
+                        $connection->getIfNullSql('o.base_total_invoiced_cost', 0),
+                        $connection->getIfNullSql('o.base_to_global_rate', 0)
+                    )
                 ),
                 'total_invoiced_amount' => new \Zend_Db_Expr(
                     sprintf(

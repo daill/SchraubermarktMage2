@@ -4,4 +4,5 @@
     <preference for="Magento\Catalog\Pricing\Render\FinalPriceBox" type="Schraubermarkt\Sales\Pricing\Render\FinalPriceBox" />
     <preference for="Magento\ConfigurableProduct\Pricing\Render\FinalPriceBox" type="Schraubermarkt\Sales\Pricing\Render\FinalPriceBox" />
     <preference for="Magento\CatalogUrlRewrite\Model\ProductUrlPathGenerator" type="Schraubermarkt\Sales\Model\UrlRewrite\OwnProductUrlPathGenerator" />
+    <preference for="Magento\Sales\Model\ResourceModel\Report\Order\Createdat" type="Schraubermarkt\Sales\Model\ResourceModel\Report\Order\Createdat" />
 </config>
