@@ -142,6 +142,7 @@ class Grid extends \Magento\Reports\Block\Adminhtml\Grid\AbstractGrid
                 'column_css_class' => 'col-items'
             ]
         );
+        
 
         $this->setStoreIds($this->_getStoreIds());
         $currencyCode = $this->getCurrentCurrencyCode();
