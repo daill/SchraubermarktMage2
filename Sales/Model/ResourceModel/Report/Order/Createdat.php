@@ -113,14 +113,14 @@ class Createdat extends \Magento\Sales\Model\ResourceModel\Report\AbstractReport
                 ),
                 'total_cost_amount' => new \Zend_Db_Expr(
                     sprintf(
-                        'SUM(- %s - ((%s - %s - %s - %s - %s) * %s)',
-                        $connection->getIfNullSql('oi.total_custom_cost', 0),
+                        'SUM(((%s - %s - %s - %s - %s) * %s)-%s)',
                         $connection->getIfNullSql('o.base_total_paid', 0),
                         $connection->getIfNullSql('o.base_total_refunded', 0),
                         $connection->getIfNullSql('o.base_tax_invoiced', 0),
                         $connection->getIfNullSql('o.base_shipping_invoiced', 0),
                         $connection->getIfNullSql('o.base_total_invoiced_cost', 0),
-                        $connection->getIfNullSql('o.base_to_global_rate', 0)
+                        $connection->getIfNullSql('o.base_to_global_rate', 0),
+                        $connection->getIfNullSql('oi.total_custom_cost', 0)
                     )
                 ),
                 'total_invoiced_amount' => new \Zend_Db_Expr(
@@ -209,7 +209,7 @@ class Createdat extends \Magento\Sales\Model\ResourceModel\Report\AbstractReport
                 'order_id' => 'order_id',
                 'total_qty_ordered' => new \Zend_Db_Expr("SUM(qty_ordered - {$qtyCanceledExpr})"),
                 'total_qty_invoiced' => new \Zend_Db_Expr('SUM(qty_invoiced)'),
-                'total_custom_cost' => new \Zend_Db_Expr('SUM(base_cost)'),
+                'total_custom_cost' => new \Zend_Db_Expr('SUM(base_cost)')
             ];
             $selectOrderItem->from(
                 $this->getTable('sales_order_item'),
