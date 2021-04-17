@@ -184,7 +184,7 @@ class Grid extends \Magento\Reports\Block\Adminhtml\Grid\AbstractGrid
         $this->addColumn(
             'total_profit_amount',
             [
-                'header' => __('Profit'),
+                'header' => __('Gewinn'),
                 'type' => 'currency',
                 'currency_code' => $currencyCode,
                 'index' => 'total_profit_amount',
