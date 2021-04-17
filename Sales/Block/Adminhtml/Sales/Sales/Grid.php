@@ -197,14 +197,30 @@ class Grid extends \Magento\Reports\Block\Adminhtml\Grid\AbstractGrid
                 'column_css_class' => 'col-profit'
             ]
         );
-        
+
+        $this->addColumn(
+            'total_cost_amount',
+            [
+                'header' => __('Gewinn'),
+                'type' => 'currency',
+                'currency_code' => $currencyCode,
+                'index' => 'total_cost_amount',
+                'total' => 'sum',
+                'sortable' => false,
+                'renderer' => Currency::class,
+                'rate' => $rate,
+                'header_css_class' => 'col-cost',
+                'column_css_class' => 'col-cost'
+            ]
+        );
+
         $this->addColumn(
             'total_invoiced_amount',
             [
                 'header' => __('Invoiced'),
                 'type' => 'currency',
                 'currency_code' => $currencyCode,
-                'index' => 'total_cost_amount',
+                'index' => 'total_invoiced_amount',
                 'total' => 'sum',
                 'sortable' => false,
                 'renderer' => Currency::class,
