@@ -23,7 +23,6 @@ class FinalPriceBox extends \Magento\Catalog\Pricing\Render\FinalPriceBox
         <div class="delivery_cost"><span>Endpreis <a href="/versandkosten">zzgl. Versandkosten</a>, keine Ausweisung der Mehrwertsteuer gemäß § 19 UStG</span></div>' .
         '<div class="delivery_time"><span>Lieferzeit 1-5 Tage</span></div>';
 
-        print_r($this->getSaleableItem());
     return $result;
     }
 
