@@ -4,7 +4,7 @@
         <referenceContainer name="content">
             <block class="Magepow\Categories\Block\Categories" 
                 name="magepow.categories.category.page.before" 
-                template="Schraubermarkt_Sales::categories.phtml" 
+                template="Schraubermarkt_Sales::categories/categories.phtml" 
                 before="-"
                 ifconfig="magepow_categories/general/enabled"/>
         </referenceContainer>
