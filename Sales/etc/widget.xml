@@ -5,7 +5,7 @@
         <parameters>
             <parameter name="template" xsi:type="select">
                 <options>
-                    <option name="option_id" value="Schraubermarkt_Sales::categories/categories_widget.phtml">
+                    <option name="default" value="Schraubermarkt_Sales::categories/categories_widget.phtml">
                         <label translate="true">Schraubermarkt Default</label>
                     </option>
                 </options>
