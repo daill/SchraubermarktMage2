@@ -17,7 +17,7 @@
 }
 
 #html-body > div.page-wrapper > header {
-	background: #8e8e8e;
+	background: #b8b8b8;
 }
 
 @media (min-width: 769px), print {
@@ -25,4 +25,8 @@
 		display: flex;
 		justify-content: center;
 	}
+}
+
+.page-wrapper .page-header .nav-sections {
+	margin-bottom: 0;
 }
