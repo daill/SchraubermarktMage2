@@ -1,3 +1,21 @@
 .checkout_details_cart {
 	margin-top: 10px;
 }
+
+.filter-options .filter-options-content .item > a {
+	display: flex;
+	justify-content: space-between;
+}
+
+#maincontent > div.category-view {
+	display: none;
+}
+
+#narrow-by-list > dd:nth-child(6) > ol > li:nth-child(8) > a > span {
+	flex: 1 0 auto;
+    text-align: right;
+}
+
+#html-body > div.page-wrapper > header {
+	background: #8e8e8e;
+}
