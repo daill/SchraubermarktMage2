@@ -19,3 +19,10 @@
 #html-body > div.page-wrapper > header {
 	background: #8e8e8e;
 }
+
+@media (min-width: 769px), print {
+	#store\.menu > nav {
+		display: flex;
+		justify-content: center;
+	}
+}
