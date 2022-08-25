@@ -39,3 +39,7 @@
 .page-wrapper .panel.wrapper .panel.header .header.links a {
 	color: white;
 }
+
+.header.content .block.block-search .form.minisearch .action.advanced {
+	font-weight: bold;
+}
