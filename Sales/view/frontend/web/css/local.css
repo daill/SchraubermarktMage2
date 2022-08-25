@@ -30,3 +30,12 @@
 .page-wrapper .page-header .nav-sections {
 	margin-bottom: 0;
 }
+
+.page-wrapper .page-header .panel.wrapper {
+		background-color: #373737;
+		font-weight: bold;
+}
+
+.page-wrapper .panel.wrapper .panel.header .header.links a {
+	color: white;
+}
