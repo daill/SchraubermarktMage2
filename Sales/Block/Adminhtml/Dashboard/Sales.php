@@ -80,9 +80,9 @@ class Sales extends \Magento\Backend\Block\Dashboard\Bar
         $collection->load();
         $sales = $collection->getFirstItem();
 
-        $this->addTotal(__('Lifetime Sales'), $sales->getLifetime());
-        $this->addTotal(__('Average Order'), $sales->getAverage());
-
+        $lifetime = $sales->getLifetime();
+        $average = $sales->getAverage();
+  
         $period = $this->getRequest()->getParam('period', Period::PERIOD_1_YEAR);
 
         /* @var $collection Collection */
@@ -97,5 +97,8 @@ class Sales extends \Magento\Backend\Block\Dashboard\Bar
         $totals = $collection->getFirstItem();
 
         $this->addTotal(__('Revenue'), $totals->getRevenue());
+        $this->addTotal(__('Lifetime Sales'), $lifetime());
+        $this->addTotal(__('Average Order'), $average);
+
     }
 }

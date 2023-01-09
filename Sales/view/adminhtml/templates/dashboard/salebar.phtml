@@ -5,7 +5,6 @@
  */
 ?>
 <?php if (count($block->getTotals()) > 0) : ?>
-    <div>test</div>
     <?php foreach ($block->getTotals() as $_total) : ?>
     <div class="dashboard-item dashboard-item-primary">
         <div class="dashboard-item-title"><?= $block->escapeHtml($_total['label']) ?></div>
