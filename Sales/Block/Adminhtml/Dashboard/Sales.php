@@ -18,7 +18,7 @@ use Magento\Reports\Model\ResourceModel\Order\CollectionFactory;
  * @author      Magento Core Team <core@magentocommerce.com>
  * @since 100.0.2
  */
-class Sales extends Magento\Backend\Block\Dashboard\Bar
+class Sales extends \Magento\Backend\Block\Dashboard\Bar
 {
     /**
      * @var string
