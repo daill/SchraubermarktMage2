@@ -9,5 +9,8 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="analytics_service_external_link" remove="true"/>
+        <referenceBlock name="content.dashboard">
+            <block class="Schraubermarkt\Sales\Block\Adminhtml\Dashboard\Sales" name="dashboard.sales" as="sales"/>
+        </referenceBlock>
     </body>
 </page>
