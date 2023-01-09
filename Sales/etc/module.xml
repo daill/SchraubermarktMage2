@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-<module name="Schraubermarkt_Sales" setup_version="0.0.1"> <sequence>
+<module name="Schraubermarkt_Sales" setup_version="0.0.1"> 
+<sequence>
 <module name="Magepow_Categories"/>
 <module name="Magento_Sales"/>
-<module name="Magento_Report"/> </sequence>
+<module name="Magento_Report"/> 
+<module name="Magento_Backend"/> 
+</sequence>
     </module>
 </config>
