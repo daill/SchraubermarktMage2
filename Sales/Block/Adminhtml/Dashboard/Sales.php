@@ -10,6 +10,7 @@ namespace Schraubermarkt\Sales\Block\Adminhtml\Dashboard;
 use Magento\Backend\Block\Template\Context;
 use Magento\Framework\Module\Manager;
 use Magento\Reports\Model\ResourceModel\Order\CollectionFactory;
+use Magento\Backend\Model\Dashboard\Period;
 
 /**
  * Adminhtml dashboard sales statistics bar
