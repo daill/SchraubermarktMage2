@@ -86,7 +86,7 @@ class Sales extends \Magento\Backend\Block\Dashboard\Bar
         
 
         /* @var $collection Collection */
-        $collection = $this->_collectionFactory->create();
+        $collection = $this->_collectionFactory->create()->calculateSales($isFilter);
         $dateEnd = new \DateTime();
         $dateStart = new \DateTime('first day of January this year');
         $collection->addFieldToFilter(
@@ -95,7 +95,7 @@ class Sales extends \Magento\Backend\Block\Dashboard\Bar
                 'from' => $dateStart->format(\Magento\Framework\Stdlib\DateTime::DATETIME_PHP_FORMAT),
                 'to' => $dateEnd->format(\Magento\Framework\Stdlib\DateTime::DATETIME_PHP_FORMAT)
             ]
-        )->calculateSales();
+        );
 
         $collection->load();
 
