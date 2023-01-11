@@ -89,7 +89,6 @@ class Sales extends \Magento\Backend\Block\Dashboard\Bar
         $collection = $this->_collectionFactory->create()
         $dateEnd = new \DateTime();
         $dateStart = new \DateTime('first day of January this year');
-        echo "date " + $dateStart;
         $collection->addFieldToFilter(
             'created_at',
             [
