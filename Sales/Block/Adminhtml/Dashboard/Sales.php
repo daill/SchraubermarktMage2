@@ -83,14 +83,20 @@ class Sales extends \Magento\Backend\Block\Dashboard\Bar
         $lifetime = $sales->getLifetime();
         $average = $sales->getAverage();
   
-        $period = $this->getRequest()->getParam('period', Period::PERIOD_1_YEAR);
+        
 
         /* @var $collection Collection */
-        $collection = $this->_collectionFactory->create()->addCreateAtPeriodFilter(
-            $period
-        )->calculateTotals(
-            $isFilter
-        );
+        $collection = $this->_collectionFactory->create()
+        $dateEnd = new \DateTime();
+        $dateStart = new \DateTime('first day of January this year');
+        echo "date " + $dateStart;
+        $collection->addFieldToFilter(
+            'created_at',
+            [
+                'from' => $dateStart->format(\Magento\Framework\Stdlib\DateTime::DATETIME_PHP_FORMAT),
+                'to' => $dateEnd->format(\Magento\Framework\Stdlib\DateTime::DATETIME_PHP_FORMAT)
+            ]
+        )->calculateTotals();
 
         $collection->load();
 
