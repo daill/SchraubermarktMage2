@@ -90,7 +90,7 @@ class Sales extends \Magento\Backend\Block\Dashboard\Bar
         $dateEnd = new \DateTime();
         $dateStart = new \DateTime('first day of January this year');
         $collection->addFieldToFilter(
-            'created_at',
+            'period',
             [
                 'from' => $dateStart->format(\Magento\Framework\Stdlib\DateTime::DATETIME_PHP_FORMAT),
                 'to' => $dateEnd->format(\Magento\Framework\Stdlib\DateTime::DATETIME_PHP_FORMAT)
