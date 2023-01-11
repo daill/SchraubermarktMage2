@@ -95,7 +95,7 @@ class Sales extends \Magento\Backend\Block\Dashboard\Bar
                 'from' => $dateStart->format(\Magento\Framework\Stdlib\DateTime::DATETIME_PHP_FORMAT),
                 'to' => $dateEnd->format(\Magento\Framework\Stdlib\DateTime::DATETIME_PHP_FORMAT)
             ]
-        )->calculateTotals();
+        )->calculateSales();
 
         $collection->load();
 
