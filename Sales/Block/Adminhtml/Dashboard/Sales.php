@@ -86,7 +86,7 @@ class Sales extends \Magento\Backend\Block\Dashboard\Bar
         
 
         /* @var $collection Collection */
-        $collection = $this->_collectionFactory->create()
+        $collection = $this->_collectionFactory->create();
         $dateEnd = new \DateTime();
         $dateStart = new \DateTime('first day of January this year');
         $collection->addFieldToFilter(
