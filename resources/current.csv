@@ -434,7 +434,7 @@ Shipping,Shipping,module,Magento_Backend
 "All Store Views","All Store Views",module,Magento_Backend
 "What is this?","What is this?",module,Magento_Backend
 "Save Account","Save Account",module,Magento_Backend
-"My Account","My Account",module,Magento_Backend
+"My Account","Mein Konto",module,Magento_Backend
 "Account Information","Account Information",module,Magento_Backend
 "User Name","User Name",module,Magento_Backend
 "First Name","First Name",module,Magento_Backend
@@ -2730,7 +2730,7 @@ Change,Change,module,Magento_Customer
 Newsletters,Newsletters,module,Magento_Customer
 "You are subscribed to ""General Subscription"".","You are subscribed to ""General Subscription"".",module,Magento_Customer
 or,or,module,Magento_Customer
-"My Account","Mein Account",module,Magento_Customer
+"My Account","Mein Konto",module,Magento_Customer
 "Default Addresses","Default Addresses",module,Magento_Customer
 "Change Billing Address","Change Billing Address",module,Magento_Customer
 "You have no default billing address in your address book.","You have no default billing address in your address book.",module,Magento_Customer
@@ -12409,7 +12409,7 @@ Configure,Configure,module,Magento_Wishlist
 Delete,Delete,module,Magento_Wishlist
 "Product Details and Comment","Product Details and Comment",module,Magento_Wishlist
 "Add To Wishlist","Add To Wishlist",module,Magento_Wishlist
-"My Account","My Account",theme,frontend/Magento/blank
+"My Account","Mein Konto",theme,frontend/Magento/blank
 "Mageplaza Extensions","Mageplaza Extensions",module,Mageplaza_Core
 Information,Information,module,Mageplaza_Core
 "General Configuration","General Configuration",module,Mageplaza_Core
