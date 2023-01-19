@@ -3,6 +3,7 @@ define([
     'jquery',
     'underscore',
     'moment',
+    '../Magento_Ui/js/lib/validation/utils',
     'mage/translate'
 ], function ($, _, moment) {
     'use strict';
