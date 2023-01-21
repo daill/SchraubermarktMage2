@@ -1,6 +1,6 @@
 define([
     'jquery',
-    'utils.js',
+    'Magento_Ui/js/lib/validation/utils.js',
 
 ], function($) {
     'use strict';
