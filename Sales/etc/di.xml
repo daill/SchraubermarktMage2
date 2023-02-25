@@ -5,4 +5,11 @@
     <preference for="Magento\ConfigurableProduct\Pricing\Render\FinalPriceBox" type="Schraubermarkt\Sales\Pricing\Render\FinalPriceBox" />
     <preference for="Magento\CatalogUrlRewrite\Model\ProductUrlPathGenerator" type="Schraubermarkt\Sales\Model\UrlRewrite\OwnProductUrlPathGenerator" />
     <preference for="Magento\Sales\Model\ResourceModel\Report\Order\Createdat" type="Schraubermarkt\Sales\Model\ResourceModel\Report\Order\Createdat" />
+    <virtualType name="Magento\Catalog\Model\Api\SearchCriteria\CollectionProcessor\ProductFilterProcessor" type="Magento\Eav\Model\Api\SearchCriteria\CollectionProcessor\FilterProcessor">
+    <arguments>
+        <argument name="customFilters" xsi:type="array">
+            <item name="qty" xsi:type="object">Schraubermarkt\Sales\Model\Api\SearchCriteria\CollectionProcessor\FilterProcessor\ProductQtyFilter</item>
+        </argument>
+    </arguments>
+</virtualType>
 </config>
